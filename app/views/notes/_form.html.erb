@@ -1,0 +1,10 @@
+<%= form_with(model: note) do |form| %>
+  
+
+  <div class="field" >
+    <%= form.text_field :description, remote: true, placeholder:'Add Note', :onchange => 'this.form.submit()'%>
+  </div>
+ <!-- <div class="actions">
+    <%= form.submit %>
+  </div> -->
+<% end %>
